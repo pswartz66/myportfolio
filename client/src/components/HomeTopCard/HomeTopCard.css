@@ -1,0 +1,72 @@
+
+
+.mycard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    border: none;
+    border-radius: 0;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+.mycardbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.myname {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    color: #212529;
+    
+}
+
+svg {
+    display: flex;
+    justify-content: center;
+    font: 10.5em 'Roboto Mono';
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 6px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 6.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #212529;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #184D6A;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: rgb(83, 71, 15);
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: rgb(19, 61, 78);
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #212529;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
