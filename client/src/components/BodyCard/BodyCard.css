@@ -1,19 +1,20 @@
-/* .bodyContainer {
-    background-color: aquamarine!important;
+
+
+.bodyContainer {
+    background-color: rgba(82, 82, 82, 0.548)!important;
     height: 600px!important;
     width: auto;
-    margin-top: 10%;
-} */
+    margin-top: 45vh;
+}
 
 
-
-@media screen and (min-height: 500px) and (min-width: 768px) {
+/* @media screen and (min-height: 577px) {
 
     .bodyContainer {
-        background-color: aquamarine!important;
+        background-color: rgba(255, 255, 255)!important;
         height: 600px!important;
         width: auto;
-        margin-top: 10%;
+        margin-top: 80vh;
     }
 
-}
+} */

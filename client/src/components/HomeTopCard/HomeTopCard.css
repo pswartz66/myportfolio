@@ -3,52 +3,112 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 160px;
     border: none;
     border-radius: 0;
-    height: 160px;
-    background-color: rgba(255, 255, 255, 0.938);
-    /* border: solid 2px rgb(192, 173, 136); */
+    /* height: 300px; */
+    width: auto;
+    background-color: rgba(26, 35, 43, 0.87);
+    /* box-shadow: 0px 0px 4px 2px rgba(235, 225, 180, 0.836); */
+    padding: 10px;
+    /* border-radius: 4px; */
+    /* border: solid 1px rgba(223, 212, 162, 0.836); */
+}
+.profileImg {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 4px white;
+    
+}
+.sub-head-container {
+    width: 100%;
+    padding: 2px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.sub-name-heading {
+    font-family: 'Roboto Mono', monospace;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px;
+}
+.sub-head-col {
+    padding: 0px!important;
+    float: left;
+}
+i {
+    border: solid rgba(176, 185, 187, 0.781);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+}
+i:hover {
+    cursor: pointer;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 .mycardbody {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
+    padding: 1px;
+    /* border: double 3px rgba(127, 213, 219, 0.836); */
 }
 .myname {
     font-family: 'Roboto Mono', monospace;
-    font-size: 50px;
-    color: #212529;
+    letter-spacing: -18.0px;
 }
 svg {
     display: flex;
     justify-content: center;
-    font: 10.5em 'Roboto Mono';
+    font: 10.5em 'Roboto Mono', 'monospace';
+    /* height: 100px; */
     width: 100%;
-    margin: 0 auto;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
 }
 .text-copy {
     fill: none;
     stroke: white;
     stroke-dasharray: 16% 12%;
-    stroke-width: 5px;
+    stroke-width: 4px;
     stroke-dashoffset: 0%;
-    animation: stroke-offset 3.0s 1 linear;
-    /* animation-direction: alternate; */
+    animation: stroke-offset 6.0s 1 linear;
+    animation-direction: alternate;
     animation-fill-mode: backwards;
-    /* animation-iteration-count: 1; */
+    /* animation-iteration-count: infinite; */
 }
 .text-copy:nth-child(1){
-	stroke: #497296e1;
+	stroke: #e7d37677;
     animation-delay: -1s;
 }
 .text-copy:nth-child(2){
-	stroke: #184D6A;
+	stroke: rgb(133, 164, 180);
 	animation-delay: -2s;
 }
 .text-copy:nth-child(3){
-	stroke: rgba(143, 118, 10, 0.699);
+	stroke: rgba(219, 168, 73, 0.699);
 	animation-delay: -2s;
 }
 .text-copy:nth-child(4){
@@ -56,9 +116,48 @@ svg {
 	animation-delay: -4s;
 }
 .text-copy:nth-child(5){
-	stroke: #213b55;
-	animation-delay: -5s;
+	stroke: #dfd0b1;
+	animation-delay: -3s;
 }
+
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
+}
+
+/* for top sub header, stack columns */
+@media screen and (max-width: 768px) {
+    .sub-head-container {
+        flex-direction: column;
+    }
+    .sub-head-col {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    svg {
+        display: flex;
+        justify-content: center;
+        font: 200px 'Roboto Mono', 'monospace';
+        /* height: 100px; */
+        width: 100%;
+        /* margin: 10px 10px 10px 10px; */
+        /* padding: 10px; */
+    }
+    .text-copy {
+        fill: none;
+        stroke: white;
+        stroke-dasharray: 16% 12%;
+        stroke-width: 3px;
+        stroke-dashoffset: 0%;
+        animation: stroke-offset 6.0s 1 linear;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+        /* animation-iteration-count: infinite; */
+    }
+    .myname {
+        font-family: 'Roboto Mono', monospace;
+
+        letter-spacing: -18.0px;
+    }
 }
