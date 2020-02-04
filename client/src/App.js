@@ -6,6 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <div className="bg-image">
       <Router>
         <div>
           <Switch>
@@ -13,6 +14,7 @@ function App() {
           </Switch>
         </div>
       </Router>
+      </div>
     </div>
   );
 }

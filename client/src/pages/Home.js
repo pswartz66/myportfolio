@@ -15,7 +15,6 @@ class Home extends Component {
     render = () => {
         return (
             <div>
-
                 <Link 
                     to="/Home"
                     className={window.location.pathname === "/Home"}
