@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import HomeTopCard from '../components/HomeTopCard';
 import Body from '../components/Body';
+import Projects from '../components/Projects';
 
 class Home extends Component {
     constructor(props) {
@@ -21,6 +22,8 @@ class Home extends Component {
                 </Link> 
                 <HomeTopCard />
                 <Body />
+
+                <Projects />
 
             </div>
         )

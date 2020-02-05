@@ -1,15 +1,33 @@
-
+.front-card-container {
+    margin: 10px;
+}
 .front-card {
     background-color: rgba(0, 128, 128, 0.521);
     width: 200px;
     height: 200px;
+    border: none;
+}
+.front-card:hover {
+    cursor: pointer;
 }
 .sub-card-col {
     display: flex;
     justify-content: center;
     padding: 10px!important;
-    /* float: left; */
+    float: left;
+}
+
+.front-card-footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 35, 36);
+}
+
+.front-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .front-card-text {
+    text-align: center;
     color: black;
 }

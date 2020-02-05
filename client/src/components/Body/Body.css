@@ -1,16 +1,22 @@
 .bodyContainer {
     background: rgb(2,0,36);
     background: linear-gradient(-50deg, rgb(0, 7, 36) 0%, rgba(18, 60, 88, 0.979) 60%,rgba(36, 104, 150, 0.945) 100%);
-    height: 600px!important;
+    height: 730px;
     width: auto;
     margin-top: 45vh;
     font-family: 'Roboto Mono', monospace;
     color: rgb(255, 255, 255);
     font-size: 16px;
+    /* overflow-y: auto; */
 }
-h2 {
+h2, h4 {
+    margin-top: 20px;
     margin-left: 10px;
     padding: 10px 0 0 10px;
+}
+
+.github-icon {
+    float: left;
 }
 .intro {
     text-align: left;
@@ -24,13 +30,11 @@ h2 {
 }
 
 
-
-
-/* @media screen and (min-height: 577px) {
+/* @media screen and (max-height: 722px) {
 
     .bodyContainer {
         background-color: rgba(255, 255, 255)!important;
-        height: 600px!important;
+        height: 700px;
         width: auto;
         margin-top: 80vh;
     }

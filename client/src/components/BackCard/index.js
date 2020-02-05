@@ -10,18 +10,15 @@ const BackCard = (props) => {
 
         <div>
             <div className="back-card-container">
-
                 <Col className="sub-card-col">
-                    <Card className="back-card">
-                        <Card.Body>
-                            <Card.Text className="back-card-text">
-                                Github
-                            </Card.Text>
-                            <Button onClick={props.onClick} type="submit" variant="primary">Go somewhere</Button>
+                    <Card onClick={props.onClick} className="back-card">
+                    <Card.Header className="back-card-footer">pswartz66</Card.Header>
+                        <Card.Body className="back-card-body">
+                           <a href="https://github.com/pswartz66"><i class="fa fa-github fa-4x github-icon"></i></a>
                         </Card.Body>
                     </Card>
                 </Col>
-                </div>
+            </div>
         </div>
     )
 }

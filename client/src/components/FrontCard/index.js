@@ -10,20 +10,24 @@ const FrontCard = (props) => {
 
             <div className="front-card-container">
                 <Col className="sub-card-col">
-                    <Card className="front-card">
-                        {/* <Card.Img className="front-card-img" variant="top" src="holder.js/100px180" /> */}
-                        <Card.Body>
-                            <Card.Text className="front-card-text">
-                                Some quick text
-                            </Card.Text>
-                            <Button onClick={props.onClick} type="submit" variant="primary">Lets connect!</Button>
+                    <Card onClick={props.onClick} className="front-card">
+                        <Card.Body className="front-card-body">
+                            <i class="fa fa-github fa-4x github-icon"></i>
                         </Card.Body>
+                        <Card.Footer className="front-card-footer">Github</Card.Footer>
+                    </Card>
+                </Col>
+                <Col className="sub-card-col">
+                    <Card onClick={props.onClick} className="front-card">
+                        <Card.Body className="front-card-body">
+                            <i class="fa fa-github fa-4x github-icon"></i>
+                        </Card.Body>
+                        <Card.Footer className="front-card-footer">Github</Card.Footer>
                     </Card>
                 </Col>
             </div>
-
+            
     )
-
 }
 
 export default FrontCard;

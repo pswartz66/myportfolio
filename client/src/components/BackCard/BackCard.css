@@ -5,15 +5,36 @@
     background-color: rgba(0, 128, 128, 0.521);
     width: 200px;
     height: 200px;
+    border: none;
 }
 .sub-card-col {
+    width: 33%;
     display: flex;
     justify-content: center;
     padding: 10px!important;
     /* float: left; */
 }
 
+.back-card-footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 35, 36);
+}
+
+.back-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .back-card-text {
     color: black;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

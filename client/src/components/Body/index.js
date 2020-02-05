@@ -23,10 +23,11 @@ class Body extends Component {
     render() {
         return (
             <div>
-                <div id="section2" className="bodyContainer">
+                <div className="bodyContainer">
                     <Row>
                         <Col className="col-12">
                             <h2 className="d-flex justify-content-start">Phil Swartz</h2>
+                            
                             <div>
                                 <p className="intro">
                                     Phil recently graduated from the Penn LPS coding bootcamp.
@@ -38,6 +39,9 @@ class Body extends Component {
                                     the streets of <span className="strong-text">Philadelphia</span>, make cool videos with his GoPro, and produce music.
                                 </p>
                             </div>
+
+                            <h4 className="d-flex justify-content-start">Let's Connect!</h4>
+
                         </Col>
                     </Row>
 
