@@ -14,14 +14,14 @@ const HomeTopCard = props => {
                 <Row>
                     <Col className="col-sm-12 col-md-12 col-lg-12">
                         <Card className="mycard">
-                            <Card.Body className="mycardbody">
+                            <Card.Body onClick={props.onClick} className="mycardbody">
 
                                 {/* <h1 className="myname">Phillip Swartz</h1> */}
                                 <svg viewBox="0 0 1460 250">
                                     <symbol id="s-text">
-                                        <text className="myname" text-anchor="middle" x="50%" y="80%">Phil Swartz</text>
+                                        <text className="myname" textAnchor="middle" x="50%" y="80%">Phil Swartz</text>
                                     </symbol>
-                                    <g class="g-ants">
+                                    <g className="g-ants">
                                         <use xlinkHref="#s-text" className="text-copy"></use>
                                         <use xlinkHref="#s-text" className="text-copy"></use>
                                         <use xlinkHref="#s-text" className="text-copy"></use>

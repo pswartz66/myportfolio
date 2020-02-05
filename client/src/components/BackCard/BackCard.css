@@ -1,0 +1,19 @@
+.back-card-container {
+    margin: 10px;
+}
+.back-card {
+    background-color: rgba(0, 128, 128, 0.521);
+    width: 200px;
+    height: 200px;
+}
+.sub-card-col {
+    display: flex;
+    justify-content: center;
+    padding: 10px!important;
+    /* float: left; */
+}
+
+.back-card-text {
+    color: black;
+}
+

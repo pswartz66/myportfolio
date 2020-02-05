@@ -1,0 +1,15 @@
+
+.front-card {
+    background-color: rgba(0, 128, 128, 0.521);
+    width: 200px;
+    height: 200px;
+}
+.sub-card-col {
+    display: flex;
+    justify-content: center;
+    padding: 10px!important;
+    /* float: left; */
+}
+.front-card-text {
+    color: black;
+}

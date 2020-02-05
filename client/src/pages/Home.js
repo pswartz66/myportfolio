@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import HomeTopCard from '../components/HomeTopCard';
-import BodyCard from '../components/BodyCard';
-
+import Body from '../components/Body';
 
 class Home extends Component {
     constructor(props) {
@@ -20,9 +19,8 @@ class Home extends Component {
                     className={window.location.pathname === "/Home"}
                 >
                 </Link> 
-
                 <HomeTopCard />
-                <BodyCard />
+                <Body />
 
             </div>
         )
