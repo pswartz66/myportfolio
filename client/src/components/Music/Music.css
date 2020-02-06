@@ -1,0 +1,11 @@
+.musicContainer {
+    background: rgb(9, 8, 15);
+    background: linear-gradient(-50deg, rgb(9, 8, 15) 0%, rgba(66, 78, 87, 0.979) 60%,rgb(9, 8, 15)100%);
+    height: 730px;
+    width: auto;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    overflow: auto;
+
+}

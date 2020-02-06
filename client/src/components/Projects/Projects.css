@@ -1,9 +1,102 @@
 .projectsContainer {
     background: rgb(2,0,36);
     background: linear-gradient(-50deg, rgba(31, 32, 32, 0.815) 0%, rgba(49, 116, 160, 0.979) 60%,rgba(42, 143, 211, 0.945) 100%);
-    height: 730px;
+    /* height: auto; */
     width: auto;
     font-family: 'Roboto Mono', monospace;
     color: rgb(255, 255, 255);
     font-size: 16px;
+    overflow: auto;
+}
+
+.left-nav {
+    background: rgba(119, 119, 119, 0.658);
+    background: linear-gradient(-90deg, rgba(39, 39, 39, 0.658) 0%, rgba(48, 46, 46, 0.658) 0%,rgba(61, 61, 61, 0.658) 12%);
+    height: 600px;
+    width: 200px!important;
+    padding: 10px;
+    overflow: auto;
+
+
+}
+.nav-item {
+    text-align: left;
+}
+.nav-pills {
+    margin: 20px;
+}
+.nav-link {
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: left;
+    font-weight: 600;
+}
+.right-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(212, 234, 238, 0.897);
+    color: rgb(21, 25, 31);
+    font-weight: 600;
+    overflow: auto;
+
+}
+.patient-first-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+}
+.pf-img {
+    display: flex;
+    justify-content: flex-start;
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.project-card {
+    margin: 0!important;
+    border: none;
+    border-radius: 0%;
+    width: 100%;
+}
+.project-card-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(78, 134, 172, 0.979);
+
+}
+.project-card-footer {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    border: none;
+    border-radius: 0!important;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 55, 56);
+    z-index: 2;
+}
+.github-icon {
+    padding-right: 20px;
+}
+.div-tag {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.div-tag:hover {
+    cursor: pointer;
+    color: rgb(248, 248, 248);
+
+}
+.tab-pane:after {
+    content: '';
+    clear: both;
+    display: table;
 }
