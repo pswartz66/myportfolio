@@ -3,7 +3,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Tab from 'react-bootstrap/Tab';
 import Nav from 'react-bootstrap/Nav';
-import pfImage from '../../assets/img/pf-img.png';
 import Card from 'react-bootstrap/Card';
 
 

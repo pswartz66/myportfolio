@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import HomeTopCard from '../components/HomeTopCard';
 import Body from '../components/Body';
 import Projects from '../components/Projects';
-import Music from '../components/Music';
+import Music from '../components/Music'
 
 class Home extends Component {
     constructor(props) {
@@ -25,7 +25,6 @@ class Home extends Component {
                 <Body />
                 <Projects />
                 <Music />
-
 
             </div>
         )
