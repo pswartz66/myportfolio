@@ -11,13 +11,5 @@
 }
 
 
-img[alt*="audio-image"] {
-    height: 100px!important;
-    width: 200px!important;
-}
 
-.audio-player {
-    border-radius: none;
-    background-color: cadetblue;
-}
 

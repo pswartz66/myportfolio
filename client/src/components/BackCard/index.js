@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import './BackCard.css';
 
 const BackCard = (props) => {
@@ -9,7 +8,7 @@ const BackCard = (props) => {
     return (
 
         <div>
-            <div className="back-card-container">
+            {/* <div className="back-card-container">
                 <Col className="sub-card-col">
                     <Card onClick={props.onClick} className="back-card">
                     <Card.Header className="back-card-footer">pswartz66</Card.Header>
@@ -18,7 +17,7 @@ const BackCard = (props) => {
                         </Card.Body>
                     </Card>
                 </Col>
-            </div>
+            </div> */}
         </div>
     )
 }
