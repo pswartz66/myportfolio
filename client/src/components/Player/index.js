@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import ArgumentImg from '../../assets/img/argument.jpg';
-import PalmTrees from '../../assets/img/palmtrees.jpg';
-import RockClimb from '../../assets/img/rockclimb.jpg';
+// import ArgumentImg from '../../assets/img/argument.jpg';
+// import PalmTrees from '../../assets/img/palmtrees.jpg';
+// import RockClimb from '../../assets/img/rockclimb.jpg';
 
 
 
@@ -23,25 +23,20 @@ const Player = (props) => {
                         <div className="box">
                             <h4 className="my-0 h5 text-center">Just click<i className="fa fa-play p-4"></i></h4>
                             <Card id="myPlayer">
-                                <Card.Body classsName="audio-image">
-                                    <img alt="audioPicture" src={RockClimb} />
+                                <Card.Body classsName="audio-pic">
+                                    <img alt="audioPicture" src={props.songPic}/>
 
                                 </Card.Body>
-                                {/* <audio className="audio-player" controls="controls">
-                                    Your browser does not support the &lt;audio&gt; tag.
-                                                <source src={SorrySong} />
-                                </audio> */}
 
                                 <div className="play-control-icons">
-                                    <i onClick={props.onClick} className="fa fa-backward fa-2x backward"></i>
-                                    <i onClick={props.onClick} className="fa fa-play-circle fa-3x play"></i>
-                                    <i onClick={props.onClick} className="fa fa-pause-circle fa-3x pause"></i>
-                                    <i onClick={props.onClick} className="fa fa-forward fa-2x forward"></i>
-
+                                    <i onClick={props.onBackwardControlClick} className="fa fa-backward fa-2x backward"></i>
+                                    <i onClick={props.onPauseClick} className="fa fa-pause-circle fa-3x pause"></i>
+                                    <i onClick={props.onPlayClick} className="fa fa-play-circle fa-3x play"></i>
+                                    <i onClick={props.onForwardControlClick} className="fa fa-forward fa-2x forward"></i>
                                 </div>
                                 <Card.Footer className="container">
                                     <div>
-                                        Track title goes here
+                                        {`${props.songTitle} by`} {`${props.songArtist}`}
                                     </div>
                                 </Card.Footer>
 
