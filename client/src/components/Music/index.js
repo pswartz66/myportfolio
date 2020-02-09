@@ -36,6 +36,7 @@ class Music extends Component {
                 }
             ],
             songCounter: 0,
+            songCounterBack: 2,
             songArr: [
                       'https://abovewhispers.com/wp-content/uploads/2017/05/Couple-holding-hands.jpg',
                       '../../assets/audio/Sorry_instrumental.mp3',
@@ -62,7 +63,7 @@ class Music extends Component {
         let count = this.state.songCounter;
         let myPlaylist = this.state.playlist;
         for (let i = 0; i < myPlaylist.length; i++) {
-            if (count === this.state.playlist[i].song) {
+            if (count === this.state.playlist[i].song ) {
                 this.setState({
                     songArr: [
                         myPlaylist[i].songPicture,
@@ -72,7 +73,7 @@ class Music extends Component {
                     ],
                     songCounter: count + 1
                 })
-            } else if (count === 3) {
+            } else if (count >= 2) {
                 this.setState({
                     songArr: [
                         myPlaylist[0].songPicture,
@@ -90,6 +91,34 @@ class Music extends Component {
     handleBackwardControlClick = (event) => {
         event.preventDefault();
         console.log('backward clicked');
+        let count = this.state.songCounterBack;
+        let myPlaylist = this.state.playlist;
+        for (let i = 2; i >= 0; i--) {
+            // console.log(i);
+            if (count === this.state.playlist[i].song ) {
+                this.setState({
+                    songArr: [
+                        myPlaylist[i].songPicture,
+                        myPlaylist[i].mp3,
+                        myPlaylist[i].artist,
+                        myPlaylist[i].title
+                    ],
+                    songCounterBack: count - 1
+                })
+            } else if (count <= 0) {
+                this.setState({
+                    songArr: [
+                        myPlaylist[2].songPicture,
+                        myPlaylist[2].mp3,
+                        myPlaylist[2].artist,
+                        myPlaylist[2].title
+                    ],
+                    songCounterBack: 2
+                })
+            }
+        }
+        console.log(this.state.songCounterBack);
+
     }
     render() {
         return (

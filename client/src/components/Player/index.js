@@ -3,9 +3,6 @@ import Card from 'react-bootstrap/Card';
 // import ArgumentImg from '../../assets/img/argument.jpg';
 // import PalmTrees from '../../assets/img/palmtrees.jpg';
 // import RockClimb from '../../assets/img/rockclimb.jpg';
-
-
-
 // import SorrySong from '../../assets/audio/Sorry_instrumental.mp3';
 import './Player.css';
 

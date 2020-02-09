@@ -30,6 +30,9 @@ const Projects = (props) => {
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">Song Sparrow</Nav.Link>
                                 </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="fourth">Tennis Rank</Nav.Link>
+                                </Nav.Item>
                             </Nav>
                         </Col>
                         <Col className="col-sm-9 right-nav">
@@ -90,6 +93,25 @@ const Projects = (props) => {
                                         looking up a bands concerts and ticket prices. The front end is using JS, ajax, html, and css and on the backend
                                         we're storing search criteria and chats in google's firebase database.
                                                     </div>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="fourth">
+                                        <Card className="project-card">
+                                            <Card.Body className="project-card-body">
+                                                <i class="fa fa-github fa-4x github-icon"></i>
+                                                <a className="div-tag" href="https://github.com/pswartz66/TennisRanker">Check it out on Github</a>
+                                            </Card.Body>
+                                            <Card.Footer className="project-card-footer">Contributers: jackryan, pswartz66</Card.Footer>
+                                        </Card>
+                                        <div className="patient-first-desc">Idea was inspired by a local high school tennis team. They are in need 
+                                        of a player ranking system and seeding for tournaments. Their current process is to gather the coaches
+                                        for a meeting and determine top seeds (players 1 - 9 and then randomize the other 10 - 25 if they have that many players).
+                                        Since the current process requires time/travel and manually writing down players names we've decide to take on the project.
+                                        </div>
+                                        <div className="patient-first-desc">We are currently in the early stages but our goal is to make this
+                                        100% mobile for ios and android. We've set up the project using expo and will be building mainly
+                                        in react-native. This is our first try with a mobile app so while we are excited I'm sure we're for some challenges!
+                                        We figured we'd 1) help solve a problem and 2) use it as a learning experience.
+                                        </div>
                                     </Tab.Pane>
                                 </Tab.Content>
                             </Row>
