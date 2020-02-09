@@ -17,8 +17,8 @@ class Home extends Component {
         return (
             <div>
                 <Link 
-                    to="/Home"
-                    className={window.location.pathname === "/Home"}
+                    to="/"
+                    className={window.location.pathname === "/"}
                 >
                 </Link> 
                 <HomeTopCard />
