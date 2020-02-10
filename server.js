@@ -21,7 +21,7 @@ app.use(require('express-session')({ secret: 'keyboard cat', resave: false, save
 
 // Serve up static assets (on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static(path.join(__dirname, "./client/build")));
 }
 
 //Use routes
@@ -30,7 +30,6 @@ if (process.env.NODE_ENV === "production") {
 // no routes are currently setup so instead of using above
 // we'll run a app.get
 app.get((req, res) => {
-    // res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
