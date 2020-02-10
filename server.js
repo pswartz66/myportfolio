@@ -4,6 +4,7 @@ const express = require('express');
 // const db = require('./models')
 // const routes = require('./routes');
 const PORT = process.env.PORT || 3001;
+const path = require('path');
 const app = express();
 
 //Middleware:
@@ -25,6 +26,12 @@ if (process.env.NODE_ENV === "production") {
 
 //Use routes
 // app.use(routes);
+
+// no routes are currently setup so instead of using above
+// we'll run a app.get
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
 
 // const endpoint = '';
 //Start up the mongoose server
