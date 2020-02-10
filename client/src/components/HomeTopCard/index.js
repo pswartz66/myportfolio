@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
+// import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -9,7 +9,8 @@ import './HomeTopCard.css';
 
 const HomeTopCard = props => {
     return (
-        <Container>
+        // <Container>
+        <div className="d-flex justify-content-center align-items-center">
             <div className="home-top-container">
                 <Row>
                     <Col className="col-sm-12 col-md-12 col-lg-12">
@@ -63,11 +64,13 @@ const HomeTopCard = props => {
 
                             <br>
                             </br>
-                        </Card >
-                    </Col >
-                </Row >
-            </div >
-        </Container >
+                        </Card>
+                    </Col>
+                </Row>
+            </div>
+
+            </div>
+        // </Container >
 
     )
 }
