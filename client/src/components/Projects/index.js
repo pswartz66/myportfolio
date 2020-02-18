@@ -43,7 +43,7 @@ const Projects = (props) => {
                                         <Col className="col-12 p-0">
                                             <Card className="project-card">
                                                 <Card.Body className="project-card-body">
-                                                    <i class="fa fa-github fa-4x github-icon"></i>
+                                                    <i className="fa fa-github fa-4x github-icon"></i>
                                                     <a className="div-tag" href="https://github.com/maleszewskid/Project-3">Check it out on Github</a>
                                                 </Card.Body>
                                                 <Card.Footer className="project-card-footer">Contributers: slevy239, dom, jackryan, pswartz66</Card.Footer>
@@ -67,7 +67,7 @@ const Projects = (props) => {
                                     <Tab.Pane eventKey="second">
                                         <Card className="project-card">
                                             <Card.Body className="project-card-body">
-                                                <i class="fa fa-github fa-4x github-icon"></i>
+                                                <i className="fa fa-github fa-4x github-icon"></i>
                                                 <a className="div-tag" href="https://github.com/Slevy239/iPlaylist">Check it out on Github</a>
                                             </Card.Body>
                                             <Card.Footer className="project-card-footer">Contributers: slevy239, jackryan, pswartz66</Card.Footer>
@@ -82,7 +82,7 @@ const Projects = (props) => {
                                     <Tab.Pane eventKey="third">
                                         <Card className="project-card">
                                             <Card.Body className="project-card-body">
-                                                <i class="fa fa-github fa-4x github-icon"></i>
+                                                <i className="fa fa-github fa-4x github-icon"></i>
                                                 <a className="div-tag" href="https://github.com/gainstrive/song-sparrow">Check it out on Github</a>
                                             </Card.Body>
                                             <Card.Footer className="project-card-footer">Contributers: gainstrive, pav6778, pswartz66</Card.Footer>
@@ -97,7 +97,7 @@ const Projects = (props) => {
                                     <Tab.Pane eventKey="fourth">
                                         <Card className="project-card">
                                             <Card.Body className="project-card-body">
-                                                <i class="fa fa-github fa-4x github-icon"></i>
+                                                <i className="fa fa-github fa-4x github-icon"></i>
                                                 <a className="div-tag" href="https://github.com/pswartz66/TennisRanker">Check it out on Github</a>
                                             </Card.Body>
                                             <Card.Footer className="project-card-footer">Contributers: jackryan, pswartz66</Card.Footer>

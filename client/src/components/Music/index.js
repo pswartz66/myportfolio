@@ -45,14 +45,20 @@ class Music extends Component {
         }
     }
 
+    // componentDidMount() {
+    //     audio.addEventListener('ended', () => this.setState({ IsPlaying: false }));
+    // }
+    // componentWillMount() {
+    //     audio.removeEventListener('ended', () => this.setState({ IsPlaying: false }));
+    // }
+
 
     handlePlayControlClick = (event) => {
         event.preventDefault();
         console.log('play button clicked');
 
-        // TypeError: Cannot read property '0' of undefined
-        console.log(this.state.playlist[0].src);
     }
+
     handlePauseControlClick = (event) => {
         event.preventDefault();
         console.log('pause button clicked');
@@ -87,6 +93,7 @@ class Music extends Component {
         }
         // console.log(this.state.songArr);
         console.log(this.state.songCounter);
+
     }
     handleBackwardControlClick = (event) => {
         event.preventDefault();
