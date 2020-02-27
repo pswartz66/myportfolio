@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Sound from 'react-sound';
 import Player from '../Player';
 import './Music.css';
 
@@ -53,9 +54,29 @@ class Music extends Component {
     // }
 
 
+    componentDidMount () {
+        window.soundManager.setup({
+            url: this.state.songArr[1],
+            onready: function() {
+                // SM2 has loaded, API ready to use e.g., createSound() etc.
+              },
+          
+              ontimeout: function() {
+                // Uh-oh. No HTML5 support, SWF missing, Flash blocked or other issue
+              }
+            
+        });
+    }
+
     handlePlayControlClick = (event) => {
         event.preventDefault();
         console.log('play button clicked');
+
+        let mySound = Sound.soundManager.createSound({
+            url: this.state.songArr[1]
+        })
+
+        mySound.play();
 
     }
 
